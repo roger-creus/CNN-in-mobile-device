@@ -6,57 +6,78 @@ using UnityEngine.UI;
 
 public class CameraManager : MonoBehaviour
 {
-    bool camAvailable;
-    WebCamTexture webCamTexture;
-    Texture defaultBackground;
+
+    private bool camAvailable;
+    private WebCamTexture webCamTexture;
+    private Texture defaultBackground;
 
     public RawImage background;
     public AspectRatioFitter fit;
+    public bool frontFacing;
 
-
+    public Text camText;
+    // Use this for initialization
     void Start()
     {
         defaultBackground = background.texture;
-        webCamTexture = new WebCamTexture();
         WebCamDevice[] devices = WebCamTexture.devices;
 
         if (devices.Length == 0)
-        {
-            Debug.Log("NO CAM");
-            camAvailable = false;
-            return;
-        }
+            camText.gameObject.SetActive(true);
+
         for (int i = 0; i < devices.Length; i++)
         {
-            if (!devices[i].isFrontFacing)
+            var curr = devices[i];
+
+            if (curr.isFrontFacing == frontFacing)
             {
-                webCamTexture = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
+                webCamTexture = new WebCamTexture(curr.name, Screen.width, Screen.height);
             }
         }
+
         if (webCamTexture == null)
-        {
-            return;
-        }
+            camText.gameObject.SetActive(true);
 
-        webCamTexture.Play();
-        background.texture = webCamTexture;
 
-        camAvailable = true;
+        webCamTexture.Play(); // Start the camera
+        background.texture = webCamTexture; // Set the texture
+
+        camAvailable = true; // Set the camAvailable for future purposes.
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (!camAvailable)
-            return;
+       
 
         float ratio = (float)webCamTexture.width / (float)webCamTexture.height;
-        fit.aspectRatio = ratio;
+        fit.aspectRatio = ratio; // Set the aspect ratio
 
-        float scaleY = webCamTexture.videoVerticallyMirrored ? -1f : 1f;
-        background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
+        float scaleY = webCamTexture.videoVerticallyMirrored ? -1f : 1f; // Find if the camera is mirrored or not
+        background.rectTransform.localScale = new Vector3(1f, scaleY, 1f); // Swap the mirrored camera
 
         int orient = -webCamTexture.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
-
     }
+
+    public void TakePicture()
+    {
+
+        Debug.Log("HI");
+        Texture2D PhotoTaken = new Texture2D(webCamTexture.width, webCamTexture.height);
+        PhotoTaken.SetPixels(webCamTexture.GetPixels());
+        PhotoTaken.Apply();
+
+        background.texture = PhotoTaken;
+        
+
+        camAvailable = false;
+    }
+
+    public void BackToCam()
+    {
+        background.texture = webCamTexture;
+        camAvailable = true;
+    }
+
 }

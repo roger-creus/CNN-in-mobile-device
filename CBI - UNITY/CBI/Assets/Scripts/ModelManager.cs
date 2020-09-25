@@ -17,13 +17,13 @@ public class ModelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        model = ModelLoader.Load(modelSource, verbose:false);
-        worker = WorkerFactory.CreateWorker(WorkerFactory.Type.ComputePrecompiled, model, verbose:false);
-        FeedModel(null, texture);
-
-
+        
+      
+        /*
         foreach (var layer in model.layers)
             Debug.Log(layer.name + " does " + layer.type);
+
+        */
 
 
     }
@@ -32,6 +32,14 @@ public class ModelManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void StartMode()
+    {
+        model = ModelLoader.Load(modelSource,verbose: false);
+        worker = WorkerFactory.CreateWorker(model, verbose: false);
+        FeedModel(null, texture);
+
     }
 
     Tensor ImageToTensor(Texture2D t)
@@ -49,13 +57,13 @@ public class ModelManager : MonoBehaviour
 
         worker.Execute(ImageToTensor(t));
         var O = worker.PeekOutput();
-        Debug.Log(O[0, 0, 0, 1]);
-        FreeMemory(O);
+        //Debug.Log(O);
+        //FreeMemory(O);
     }
 
     void FreeMemory(Tensor outputs)
     {
-        outputs.Dispose();
+        //outputs.Dispose();
         worker.Dispose();
     }
 }

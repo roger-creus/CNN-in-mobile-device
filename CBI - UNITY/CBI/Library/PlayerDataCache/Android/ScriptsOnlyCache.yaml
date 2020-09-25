@@ -22,9 +22,12 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.AspectRatioFitter
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -33,7 +36,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 72
       Script: {instanceID: 0}
@@ -46,6 +53,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11164}
     - Class: 114
+      Script: {instanceID: 11404}
+    - Class: 114
+      Script: {instanceID: 11454}
+    - Class: 114
       Script: {instanceID: 11540}
     - Class: 114
       Script: {instanceID: 11690}
@@ -53,6 +64,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12002}
     - Class: 114
       Script: {instanceID: 12428}
+    - Class: 114
+      Script: {instanceID: 12584}
     - Class: 114
       Script: {instanceID: 12608}
     - Class: 114
@@ -65,9 +78,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13716}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -168,7 +185,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: c9634e0400f3a55e8f1aca689662360a
+      Hash: f2bdf392c6149f122d5cc9c8c1bd0430
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraManager
@@ -523,4 +540,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: D:/CBI-UNITY/CBI - UNITY/CBI/Builds/0.1.apk
+  playerPath: D:/CBI-UNITY/CBI - UNITY/CBI/Builds/1111.apk
