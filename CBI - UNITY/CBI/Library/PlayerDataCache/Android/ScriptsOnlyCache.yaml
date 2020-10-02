@@ -84,6 +84,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -91,6 +93,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1971053207
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -185,7 +189,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: f2bdf392c6149f122d5cc9c8c1bd0430
+      Hash: 9e8c17471ad24abd3207656fbfd4d703
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraManager
@@ -407,7 +411,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: b6322ea0446077eb43e9df83ecac4637
+      Hash: b2503ab73fd6de803b658ddf3d028db5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ModelManager
@@ -540,4 +544,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: D:/CBI-UNITY/CBI - UNITY/CBI/Builds/1111.apk
+  playerPath: /Users/rogercreus/Desktop/CBI-UNITY/CBI - UNITY/Buuilds/zzz.apk
