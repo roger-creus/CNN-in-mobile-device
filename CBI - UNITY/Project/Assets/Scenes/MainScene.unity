@@ -300,9 +300,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   app: {fileID: 110443306}
-  modelSource: {fileID: 5022602860645237092, guid: 6ea7feafa273e4b5f9b1be723203f89c,
+  modelSource: {fileID: 5022602860645237092, guid: 4e7b3673f733847d6853fcabc0432ad9,
     type: 3}
-  trial_texture: {fileID: 2800000, guid: 9f787c6f2b1104976a8b67539453dcc7, type: 3}
+  trial_texture: {fileID: 2800000, guid: aa6ff51ddccbb4f2d9a6212302394a36, type: 3}
 --- !u!4 &157555578
 Transform:
   m_ObjectHideFlags: 0

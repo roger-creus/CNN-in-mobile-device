@@ -26,6 +26,7 @@ public class ModelManager : MonoBehaviour
             Debug.Log(layer.name + " does " + layer.type);
 
         */
+        
 
     }
 
@@ -48,7 +49,7 @@ public class ModelManager : MonoBehaviour
     Texture2D Resize(Texture2D texture2D, int targetX, int targetY)
     {
 
-        RenderTexture rt = new RenderTexture(targetX, targetY, 24);
+        RenderTexture rt = new RenderTexture(targetX, targetY,1);
         RenderTexture.active = rt;
         Graphics.Blit(texture2D, rt);
         Texture2D result = new Texture2D(targetX, targetY);
@@ -151,19 +152,21 @@ public class ModelManager : MonoBehaviour
     //transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) for IMAGENET
     Tensor ImageToTensor(Texture2D t)
     {
-        var channelCount = 3; 
+        var channelCount = 3;
+
+        //Texture2D trial = (Texture2D)Resources.Load("00000_00000", typeof(Texture2D));
 
         //Custom Resize function
         Texture2D resized_img = Resize(trial_texture, 256, 256);
         //Custom CenterCrop function
-        //Texture2D center_crop_img = ResampleAndCrop(resized_img, 224, 224);
+        //Texture2D center_crop_img = ResampleAndCrop(resized_img, 256, 256);
 
         var img_tensor = new Tensor(resized_img, channelCount);
 
-        var n = CropPytorch(img_tensor, 224, 224);
+        var n = CropPytorch(img_tensor, 256, 256);
 
-        //Custom Standarization
-        var std_tensor = StandardizeTensor(n, new double[] { 0.485, 0.456, 0.406 }, new double[] { 0.229, 0.224, 0.225 });
+        //Custom Standarization mean=[0.3418, 0.3126, 0.3224], std=[0.1627, 0.1632, 0.1731
+        var std_tensor = StandardizeTensor(n, new double[] { 0.3418, 0.3126, 0.3224 }, new double[] { 0.1627, 0.1632, 0.1731 });
 
         img_tensor.Dispose();
 
@@ -244,7 +247,6 @@ public class ModelManager : MonoBehaviour
 
         for(int i = 0; i < outputs_probs.Length; i++)
         {
-
             pred_to_id[sm_probs[i]] = i;
         }
 
@@ -255,7 +257,7 @@ public class ModelManager : MonoBehaviour
             best_idxs[i] = pred_to_id[best_probs[i]];
         }
 
-
+        worker.Dispose();
         return Tuple.Create(best_idxs, best_probs);
     }
 

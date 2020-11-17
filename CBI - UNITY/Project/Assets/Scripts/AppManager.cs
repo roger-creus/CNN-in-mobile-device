@@ -63,12 +63,14 @@ public class AppManager : MonoBehaviour
         }
         */
         
-        TextAsset f = (TextAsset)Resources.Load("imgnet-labels", typeof(TextAsset));
+        TextAsset f = (TextAsset)Resources.Load("traffic-sign-labels", typeof(TextAsset));
+        
+
         if (f != null)
         {
             string text = f.text;
             string[] lines = text.Split(System.Environment.NewLine.ToCharArray());
-
+            
             foreach (string line in lines)
             {
                 string[] line_to_words = line.Split(' ');
