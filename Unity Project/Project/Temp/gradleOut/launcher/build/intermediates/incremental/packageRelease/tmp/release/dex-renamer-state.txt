@@ -1,0 +1,4 @@
+#Wed Nov 18 16:25:12 CET 2020
+base.0=/Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

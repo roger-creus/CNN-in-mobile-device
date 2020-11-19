@@ -30,6 +30,7 @@ public class CameraManager : MonoBehaviour
     void Update()
     {
         UpdateCamera();
+        
     }
 
 

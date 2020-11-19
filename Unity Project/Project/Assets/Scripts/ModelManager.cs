@@ -11,12 +11,16 @@ public class ModelManager : MonoBehaviour
 {
 	public AppManager app;
 
+   
+
     public NNModel modelSource;
 
     private IWorker worker;
     private Model model;
 
     public Texture2D trial_texture;
+
+    public RawImage seeingImage;
 
     // Start is called before the first frame update
     void Start()
@@ -33,16 +37,65 @@ public class ModelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
 
     public void StartModel()
     {
+        if (worker == null)
+		{
+			model = ModelLoader.Load(modelSource, verbose: false);
+			worker = WorkerFactory.CreateWorker(model, verbose: false);
+		}
 
-        model = ModelLoader.Load(modelSource,verbose: false);
-        worker = WorkerFactory.CreateWorker(model, verbose: false);
+    }
 
+    public void KillModel()
+    {
+        if (worker != null)
+        {
+            worker.Dispose();
+            worker = null;
+        }
+
+    }
+
+    private Texture2D rotate270(Texture2D orig)
+    {
+        Color32[] origpix = orig.GetPixels32(0);
+        Color32[] newpix = new Color32[orig.width * orig.height];
+        int i = 0;
+        for (int c = 0; c < orig.height; c++)
+        {
+            for (int r = 0; r < orig.width; r++)
+            {
+                newpix[orig.width * orig.height - (orig.height * r + orig.height) + c] = origpix[i];
+                i++;
+            }
+        }
+        Texture2D newtex = new Texture2D(orig.height, orig.width, orig.format, false);
+        newtex.SetPixels32(newpix, 0);
+        newtex.Apply();
+        return newtex;
+    }
+
+
+    private Texture2D rotate90(Texture2D orig)
+    {
+        Color32[] origpix = orig.GetPixels32(0);
+        Color32[] newpix = new Color32[orig.width * orig.height];
+        for (int c = 0; c < orig.height; c++)
+        {
+            for (int r = 0; r < orig.width; r++)
+            {
+                newpix[orig.width * orig.height - (orig.height * r + orig.height) + c] =
+                  origpix[orig.width * orig.height - (orig.width * c + orig.width) + r];
+            }
+        }
+        Texture2D newtex = new Texture2D(orig.height, orig.width, orig.format, false);
+        newtex.SetPixels32(newpix, 0);
+        newtex.Apply();
+        return newtex;
     }
 
 
@@ -53,10 +106,13 @@ public class ModelManager : MonoBehaviour
         RenderTexture.active = rt;
         Graphics.Blit(texture2D, rt);
         Texture2D result = new Texture2D(targetX, targetY);
-        result.ReadPixels(new Rect(0, 0, targetX, targetY), 0, 0);
+        result.ReadPixels(new Rect(0,0, targetX, targetY), 0, 0);
         result.Apply();
 
-        return result;
+        Texture2D rot_result = rotate270(result);
+        seeingImage.texture = rot_result;
+
+        return rot_result;
     }
 
     Tensor CropPytorch(Tensor source, int targetWidth, int targetHeight)
@@ -154,19 +210,23 @@ public class ModelManager : MonoBehaviour
     {
         var channelCount = 3;
 
-        //Texture2D trial = (Texture2D)Resources.Load("00000_00000", typeof(Texture2D));
-
         //Custom Resize function
-        Texture2D resized_img = Resize(trial_texture, 256, 256);
+        Texture2D resized_img = Resize(t, 256, 256);
+
         //Custom CenterCrop function
-        //Texture2D center_crop_img = ResampleAndCrop(resized_img, 256, 256);
+        //Texture2D center_crop_img = ResampleAndCrop(t, 256, 256);
+
+
+        //seeingImage.texture = resized_img;
+
+        //seeingImage.texture = resized_img;
 
         var img_tensor = new Tensor(resized_img, channelCount);
 
-        var n = CropPytorch(img_tensor, 256, 256);
+        //var n = CropPytorch(img_tensor, 256, 256);
 
         //Custom Standarization mean=[0.3418, 0.3126, 0.3224], std=[0.1627, 0.1632, 0.1731
-        var std_tensor = StandardizeTensor(n, new double[] { 0.3418, 0.3126, 0.3224 }, new double[] { 0.1627, 0.1632, 0.1731 });
+        var std_tensor = StandardizeTensor(img_tensor, new double[] { 0.3418, 0.3126, 0.3224 }, new double[] { 0.1627, 0.1632, 0.1731 });
 
         img_tensor.Dispose();
 
@@ -250,14 +310,13 @@ public class ModelManager : MonoBehaviour
             pred_to_id[sm_probs[i]] = i;
         }
 
-        double[] best_probs = FindBestK(sm_probs, 5);
-        double[] best_idxs = new double[5];
-        for(int i = 0; i < 5; i++)
+        double[] best_probs = FindBestK(sm_probs, 3);
+        double[] best_idxs = new double[3];
+        for(int i = 0; i < 3; i++)
         {
             best_idxs[i] = pred_to_id[best_probs[i]];
         }
 
-        worker.Dispose();
         return Tuple.Create(best_idxs, best_probs);
     }
 

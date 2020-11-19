@@ -9,7 +9,7 @@ end of 80 zone 6
 120 zone 8
 no passing (overtaking) 9
 no passing (vehicles with weight > 3.5t) 10
-priority for crossing 11
+priority for crossing  11
 priority road starts 12
 yield right-of-way 13
 stop 14
@@ -23,7 +23,7 @@ double curve (first left) 21
 rough road ahead 22
 danger of slipping 23
 road narrows from right 24
-work in process (aware of workers) 25
+work in process (aware  of  workers) 25
 traffic light ahead 26
 pedestrian may cross the road 27
 children may cross the road 28

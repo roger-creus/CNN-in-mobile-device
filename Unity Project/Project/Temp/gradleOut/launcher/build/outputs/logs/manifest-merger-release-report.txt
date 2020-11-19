@@ -1,0 +1,174 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+MERGED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:3:1-75:12
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+	package
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:70-94
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:95-141
+	android:versionCode
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:1-6:12
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:11-69
+	android:installLocation
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:3:142-182
+supports-screens
+ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:4:3-163
+	android:largeScreens
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:4:78-105
+	android:smallScreens
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:4:21-48
+	android:normalScreens
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:4:49-77
+	android:xlargeScreens
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:4:106-134
+	android:anyDensity
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:4:135-160
+application
+ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:5:3-83
+MERGED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:39:5-73:19
+MERGED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:39:5-73:19
+	android:label
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:5:16-48
+	android:icon
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml:5:49-80
+uses-sdk
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+MERGED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-11:41
+MERGED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		ADDED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+		INJECTED from /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/launcher/src/main/AndroidManifest.xml
+uses-feature#0x00030001
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:13:19-51
+uses-feature#android.hardware.vulkan.version
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:15:9-55
+uses-permission#android.permission.CAMERA
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:18:5-65
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:18:22-62
+uses-feature#android.hardware.camera
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:21:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:23:5-25:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:25:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:24:9-57
+uses-feature#android.hardware.camera.front
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:26:5-28:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:28:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:27:9-53
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:29:5-31:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:31:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:30:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:34:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:33:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:35:5-37:36
+	android:required
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:37:9-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:36:9-72
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:40:9-59:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:45:13-49
+	android:launchMode
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:44:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:43:13-48
+	android:configChanges
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:42:13-194
+	android:theme
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:46:13-54
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:41:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:47:13-51:29
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:48:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:50:17-77
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:50:27-74
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:53:13-55:40
+	android:value
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:55:17-37
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:54:17-57
+meta-data#android.notch_support
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:56:13-58:40
+	android:value
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:58:17-37
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:57:17-53
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:61:9-63:33
+	android:value
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:63:13-30
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:62:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:64:9-66:36
+	android:value
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:66:13-33
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:65:13-47
+meta-data#notch.config
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:67:9-69:50
+	android:value
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:69:13-47
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:68:13-40
+meta-data#unity.build-id
+ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:70:9-72:68
+	android:value
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:72:13-65
+	android:name
+		ADDED from [:unityLibrary] /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Project/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:71:13-42

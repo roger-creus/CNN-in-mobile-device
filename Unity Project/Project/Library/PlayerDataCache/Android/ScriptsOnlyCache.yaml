@@ -54,7 +54,9 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 11164}
+    - Class: 114
+      Script: {instanceID: 11174}
     - Class: 114
       Script: {instanceID: 11406}
     - Class: 114
@@ -79,8 +81,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13240}
     - Class: 114
       Script: {instanceID: 13718}
-    - Class: 114
-      Script: {instanceID: 14716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -104,6 +104,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 101e76f4c4debe79b5d13431671bcdf8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AppManager
   - hash:
       serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
@@ -412,7 +418,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: a9103225886bc025798e36e7ee7bcf15
+      Hash: 54408f9c02c2a1fae04b9a35c79dad37
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ModelManager
@@ -542,13 +548,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 30805c1cffe3ac7e218537b875d829ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AppManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: /Users/rogercreus/Desktop/CBI-UNITY/CBI - UNITY/Buuilds/mega.apk
+  playerPath: /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Builds/9.apk

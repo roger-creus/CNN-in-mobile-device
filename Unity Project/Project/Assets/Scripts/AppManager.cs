@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
@@ -9,12 +10,15 @@ public class AppManager : MonoBehaviour
     public ModelManager mm;
 	public Dictionary<int, string> idx_to_labels = new Dictionary<int, string>();
 
+
     public GameObject predictionPanel;
     public Text prediction_text_1;
     public Text prediction_text_2;
     public Text prediction_text_3;
-    public Text prediction_text_4;
-    public Text prediction_text_5;
+
+    public Image prediction_img_1;
+    public Image prediction_img_2;
+    public Image prediction_img_3;
 
 
 
@@ -33,11 +37,13 @@ public class AppManager : MonoBehaviour
     public void SetPredictionTexts(double[] best_idxs, double[] best_probs)
     {
         predictionPanel.SetActive(true);
-        prediction_text_1.text = "1) " + idx_to_labels[(int)best_idxs[0]] + " with prob: " + best_probs[0].ToString();
-        prediction_text_2.text = "2) " + idx_to_labels[(int)best_idxs[1]] + " with prob: " + best_probs[1].ToString();
-        prediction_text_3.text = "3) " + idx_to_labels[(int)best_idxs[2]] + " with prob: " + best_probs[2].ToString();
-        prediction_text_4.text = "4) " + idx_to_labels[(int)best_idxs[3]] + " with prob: " + best_probs[3].ToString();
-        prediction_text_5.text = "5) " + idx_to_labels[(int)best_idxs[4]] + " with prob: " + best_probs[4].ToString();
+        prediction_text_1.text = "1) " + idx_to_labels[(int)best_idxs[0]] + " with prob: " + (best_probs[0] * 100).ToString("N2") + "%";
+        prediction_text_2.text = "2) " + idx_to_labels[(int)best_idxs[1]] + " with prob: " + (best_probs[1] * 100).ToString("N2") + "%";
+        prediction_text_3.text = "3) " + idx_to_labels[(int)best_idxs[2]] + " with prob: " + (best_probs[2] * 100).ToString("N2") + "%";
+
+        prediction_img_1.GetComponent<Image>().sprite = (Sprite)Resources.Load(best_idxs[0].ToString(), typeof(Sprite));
+        prediction_img_2.GetComponent<Image>().sprite = (Sprite)Resources.Load(best_idxs[1].ToString(), typeof(Sprite));
+        prediction_img_3.GetComponent<Image>().sprite = (Sprite)Resources.Load(best_idxs[2].ToString(), typeof(Sprite));
     }
 
     public Dictionary<int, string> ReadLabels()
@@ -78,7 +84,7 @@ public class AppManager : MonoBehaviour
                 string fullname = "";
                 for (int i = 0; i < line_to_words.Length - 1; i++)
                 {
-                    fullname += line_to_words[i];
+                    fullname += line_to_words[i] + " ";
                 }
 
                 IDXS[index] = fullname;
