@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Unity.Barracuda;
 using UnityEngine.UI;
 using System;
-
+using System.IO;
 
 
 public class ModelManager : MonoBehaviour
@@ -18,9 +17,10 @@ public class ModelManager : MonoBehaviour
     private IWorker worker;
     private Model model;
 
+    public RawImage seeingImg;
     public Texture2D trial_texture;
 
-    public RawImage seeingImage;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -60,7 +60,7 @@ public class ModelManager : MonoBehaviour
 
     }
 
-    private Texture2D rotate270(Texture2D orig)
+    public Texture2D rotate270(Texture2D orig)
     {
         Color32[] origpix = orig.GetPixels32(0);
         Color32[] newpix = new Color32[orig.width * orig.height];
@@ -110,7 +110,7 @@ public class ModelManager : MonoBehaviour
         result.Apply();
 
         Texture2D rot_result = rotate270(result);
-        seeingImage.texture = rot_result;
+        
 
         return rot_result;
     }
@@ -210,16 +210,17 @@ public class ModelManager : MonoBehaviour
     {
         var channelCount = 3;
 
+        Texture2D crop = CropScale.CropTexture(t, new Vector2(175, 175), CropOptions.CENTER, 0, 0);
+
         //Custom Resize function
-        Texture2D resized_img = Resize(t, 256, 256);
+        Texture2D resized_img = Resize(crop, 256, 256);
+
+
+        seeingImg.texture = resized_img;
 
         //Custom CenterCrop function
         //Texture2D center_crop_img = ResampleAndCrop(t, 256, 256);
 
-
-        //seeingImage.texture = resized_img;
-
-        //seeingImage.texture = resized_img;
 
         var img_tensor = new Tensor(resized_img, channelCount);
 
@@ -227,6 +228,29 @@ public class ModelManager : MonoBehaviour
 
         //Custom Standarization mean=[0.3418, 0.3126, 0.3224], std=[0.1627, 0.1632, 0.1731
         var std_tensor = StandardizeTensor(img_tensor, new double[] { 0.3418, 0.3126, 0.3224 }, new double[] { 0.1627, 0.1632, 0.1731 });
+
+        byte[] bytes = resized_img.EncodeToJPG();
+
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            string filename = Application.dataPath + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".jpg";
+            //File.WriteAllBytes(filename, bytes);
+        }
+        else
+        {
+            if (!PlayerPrefs.HasKey("PhotoSaved"))
+            {
+                PlayerPrefs.SetInt("PhotoSaved", 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("PhotoSaved", PlayerPrefs.GetInt("PhotoSaved") + 1);
+            }
+
+            string filename = Application.persistentDataPath + PlayerPrefs.GetInt("PhotoSaved").ToString() + ".jpg";
+            File.WriteAllBytes(filename, bytes);
+        }
+
 
         img_tensor.Dispose();
 

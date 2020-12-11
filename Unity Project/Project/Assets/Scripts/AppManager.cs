@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+
 
 public class AppManager : MonoBehaviour
 {
@@ -37,9 +36,9 @@ public class AppManager : MonoBehaviour
     public void SetPredictionTexts(double[] best_idxs, double[] best_probs)
     {
         predictionPanel.SetActive(true);
-        prediction_text_1.text = "1) " + idx_to_labels[(int)best_idxs[0]] + " with prob: " + (best_probs[0] * 100).ToString("N2") + "%";
-        prediction_text_2.text = "2) " + idx_to_labels[(int)best_idxs[1]] + " with prob: " + (best_probs[1] * 100).ToString("N2") + "%";
-        prediction_text_3.text = "3) " + idx_to_labels[(int)best_idxs[2]] + " with prob: " + (best_probs[2] * 100).ToString("N2") + "%";
+        prediction_text_1.text = "1) " + idx_to_labels[(int)best_idxs[0]] + ": " + (best_probs[0] * 100).ToString("N2") + "%";
+        prediction_text_2.text = "2) " + idx_to_labels[(int)best_idxs[1]] + ": " + (best_probs[1] * 100).ToString("N2") + "%";
+        prediction_text_3.text = "3) " + idx_to_labels[(int)best_idxs[2]] + ": " + (best_probs[2] * 100).ToString("N2") + "%";
 
         prediction_img_1.GetComponent<Image>().sprite = (Sprite)Resources.Load(best_idxs[0].ToString(), typeof(Sprite));
         prediction_img_2.GetComponent<Image>().sprite = (Sprite)Resources.Load(best_idxs[1].ToString(), typeof(Sprite));

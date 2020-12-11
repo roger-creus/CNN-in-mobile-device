@@ -68,19 +68,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 12588}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12626}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 13240}
+      Script: {instanceID: 13242}
     - Class: 114
-      Script: {instanceID: 13718}
+      Script: {instanceID: 13720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -418,7 +418,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 54408f9c02c2a1fae04b9a35c79dad37
+      Hash: 487edae4bb3f3a4dd038e52c2d2369a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ModelManager
@@ -551,4 +551,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Builds/9.apk
+  playerPath: /Users/rogercreus/Desktop/CBI-UNITY/Unity Project/Builds/CNN_def.apk

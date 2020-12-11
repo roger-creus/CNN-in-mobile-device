@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 using UnityEngine.UI;
 using System;
+using System.IO;
 
 public class CameraManager : MonoBehaviour
 {
@@ -88,8 +87,19 @@ public class CameraManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
 
         Texture2D PhotoTaken = new Texture2D(webCamTexture.width, webCamTexture.height);
+
         PhotoTaken.SetPixels(webCamTexture.GetPixels());
         PhotoTaken.Apply();
+
+        
+
+        // Encode texture into PNG
+
+       
+        //ystem.IO.File.WriteAllBytes(filename, bytes);
+
+        // For testing purposes, also write to a file in the project folder
+        //File.WriteAllBytes(Application.dataPath + "/../SavedScreen.jpg", bytes);
 
         background.texture = PhotoTaken;
 
