@@ -1,0 +1,43 @@
+20 zone 0
+30 zone 1
+50 zone 2
+60 zone 3
+70 zone 4
+80 zone 5
+end of 80 zone 6
+100 zone 7
+120 zone 8
+no passing (overtaking) 9
+no passing (vehicles with weight > 3.5t) 10
+priority for crossing  11
+priority road starts 12
+yield right-of-way 13
+stop 14
+no entry 15
+no entry (vehicles with weight > 3.5t) 16
+do not enter 17
+general danger, warning sign 18
+curve left 19
+curve right 20
+double curve (first left) 21
+rough road ahead 22
+danger of slipping 23
+road narrows from right 24
+work in process (aware  of  workers) 25
+traffic light ahead 26
+pedestrian may cross the road 27
+children may cross the road 28
+aware of cycles, (from the right) 29
+icy road 30
+wild animals 31
+end of passing and speed restrictions 32
+traffic must turn right 33
+traffic must turn left 34
+vehicles must proceed straight ahead 35
+mandatory directions (straight or right) 36
+mandatory directions (straight or left) 37
+drive from right of the obstacle 38
+drive from left of the obstacle 39
+entrance to a traffic circle 40
+end of no passing zone (for vehicles under 3.5t) 41
+end of all passing (overtaking) restrictions 42
