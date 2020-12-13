@@ -4,6 +4,7 @@
 
 
 
+```
 ├── README.md       <- The top-level README for developers using this project.
 ├── data
 │       ├── interim        <- Manually Collected data for updating models
@@ -32,12 +33,14 @@
 
 ├── requirements.txt     <- The requirements file for reproducing the analysis environment
 
+```
+
 <p><small>Project based on a simplified version of the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 ---
 
 
-### Requirements
+### requirements
 
 The python and ipython packages inside the `requirements.txt` file need to be installed using the following command.
 
@@ -45,9 +48,7 @@ The python and ipython packages inside the `requirements.txt` file need to be in
 pip install -r requirements.txt
 ```
 
-
-
-###notebooks
+### models
 
 The source code for data loading, model trainng and exporting for each of the experimented models is found in the **notebookes** folder. Additionally, it is also provided the notebook for loading a model and updating it with the collected data in the system operation phase of the applications.
 
